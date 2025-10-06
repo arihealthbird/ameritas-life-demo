@@ -1521,7 +1521,7 @@ export default function ReviewPage() {
   }
 
   // Helper function to format tobacco usage display
-  const formatTobaccoUsage = (usage) => {
+  const formatTobaccoUsage = (usage: any) => {
     if (usage === "yes" || usage === "smoker" || usage === true) {
       return "Yes"
     } else if (usage === "no" || usage === "non-smoker" || usage === false) {
@@ -1532,7 +1532,7 @@ export default function ReviewPage() {
   }
 
   // Helper function to format tobacco last used date
-  const formatTobaccoLastUsed = (date) => {
+  const formatTobaccoLastUsed = (date: any) => {
     if (!date) return "—"
     try {
       return new Date(date).toLocaleDateString()
