@@ -1,4 +1,4 @@
-"\"use client"
+"use client"
 
 import type React from "react"
 import { AlertCircle } from "lucide-react"
@@ -34,5 +34,3 @@ export const TobaccoInfoCard: React.FC<TobaccoInfoCardProps> = ({ variant = "inf
     </div>
   )
 }
-\
-"
