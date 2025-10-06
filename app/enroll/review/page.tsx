@@ -1417,16 +1417,6 @@ export default function ReviewPage() {
     return false
   }, [primaryApplicant?.dateOfBirth, familyMembers, pendingFamilyMembers])
 
-  if (loading || !primaryApplicant) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-purple-500"></div>
-      </div>
-    )
-  }
-
-  const householdSize = familyMembers.length + 1
-
   // Check if all family members are enrolled
   const areAllFamilyMembersEnrolled = () => {
     // If there are no family members, return true
@@ -1540,6 +1530,17 @@ export default function ReviewPage() {
       return date
     }
   }
+
+  // Early return for loading state
+  if (loading || !primaryApplicant) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-purple-500"></div>
+      </div>
+    )
+  }
+
+  const householdSize = familyMembers.length + 1
 
   return (
     <div>
