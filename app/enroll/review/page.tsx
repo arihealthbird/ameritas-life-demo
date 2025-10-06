@@ -829,7 +829,7 @@ export default function ReviewPage() {
   }
 
   // Ensure edited values are properly initialized from existing data
-  const initializeEditedValues = (section, applicant, values, existingData) => {
+  const initializeEditedValues = (section: any, applicant: any, values: any, existingData: any) => {
     // Make sure we're not initializing with empty values when real data exists
     const result = { ...values }
 
@@ -1106,7 +1106,7 @@ export default function ReviewPage() {
   }
 
   // Add a new function for editing family member income sources around line 600:
-  const handleEditFamilyMemberIncomeSource = (memberId, source, index) => {
+  const handleEditFamilyMemberIncomeSource = (memberId: any, source: any, index: any) => {
     // Set up inline editing for this family member's income source
     setInlineEditingIncomeSource({
       index,
