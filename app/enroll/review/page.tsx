@@ -1540,8 +1540,7 @@ export default function ReviewPage() {
     )
   }
 
-  const householdSize = familyMembers.length + 1
-
+  // Main render (calculate household size inline if needed)
   return (
     <div>
       <SimpleHeader />
