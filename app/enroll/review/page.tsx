@@ -1542,7 +1542,7 @@ export default function ReviewPage() {
   }
 
   return (
-    <>
+    <div>
       <SimpleHeader />
       <div className="min-h-screen bg-gray-50 pb-12">
         <div className="max-w-3xl mx-auto px-4 py-6">
@@ -3975,6 +3975,6 @@ export default function ReviewPage() {
           </DialogFooter>
         </DialogContent>
       </Dialog>
-    </>
+    </div>
   )
 }
